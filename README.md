@@ -1,11 +1,11 @@
 # TransformELISA
 Transformation of raw optical density (OD) values from an enzyme-linked immunosorbent assay (ELISA) to estimate the corresponding logarithmised protein concentration in the samples. 
 
-TransformELISA.R
+TransformELISA.R:
 R script to perform the transformation. The script expects a column sample that contains the string bc for each buffer control, the string sample for each sample in the trial and the string serialdilution and the corresponding number of the sample of the serial dilution for each sample of the serial dilution.
 Furthermore, the user needs to set the technical limit of the ELISA machine, thus, the maximum OD value that can be measured. This will be used as the top asymptote of the non-linear regression model. 
 
-TrialData.csv
+TrialData.csv:
 Example of a data set which fulfills all the requirements of the R script TransformELISA.R. 
 The data set was collected in a trial with eleven ELISA plates and a serial dillution containing twelve samples.
 
